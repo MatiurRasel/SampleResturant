@@ -1,0 +1,43 @@
+base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Product>().HasData(new Product
+            {
+                ProductId = 1,
+                ProductName = "Samosa",
+                Price = 15,
+                ProductDescription = "A fried South Asian pastry with a savoury filling, including ingredients such as spiced potatoes, onions, and peas.",
+                ImageUrl = "",
+                CategoryName = "Appetizer"
+            });
+
+            modelBuilder.Entity<Product>().HasData(new Product
+            {
+                ProductId = 2,
+                ProductName = "Paneer Tikka",
+                Price = 13.99,
+                ProductDescription = "An Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor.",
+                ImageUrl = "",
+                CategoryName = "Appetizer"
+            });
+
+
+            modelBuilder.Entity<Product>().HasData(new Product
+            {
+                ProductId = 3,
+                ProductName = "Sweet Pie",
+                Price = 10.99,
+                ProductDescription = "A pie is a baked dish which is usually made of a pastry dough casing that contains a filling of various sweet or savoury ingredients.",
+                ImageUrl = "",
+                CategoryName = "Dessert"
+            });
+
+
+            modelBuilder.Entity<Product>().HasData(new Product
+            {
+                ProductId = 4,
+                ProductName = "Pav Bhaji",
+                Price = 15,
+                ProductDescription = "Pav Bhaji is a fast food dish from Mumbai (Bombay), India, consisting of a vegetable curry (bhaji) cooked in tomato gravy and served with a soft bread roll (pav).",
+                ImageUrl = "",
+                CategoryName = "Entree"
+            });
